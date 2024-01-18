@@ -238,7 +238,7 @@ bar {
 #    }
 #}
 
-exec pidof mylock > /dev/null || exec swaylock -i ~/$HOME/.config/sway/lock.png
-exec pidof mylock > /dev/null || exec ~/$HOME/.config/sway/loginlock.sh
+exec pidof mylock > /dev/null || exec swaylock -i $HOME/.config/sway/lock.png
+exec pidof mylock > /dev/null || exec $HOME/.config/sway/loginlock.sh
 
 include /etc/sway/config.d/*
