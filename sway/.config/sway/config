@@ -18,6 +18,7 @@ include catppuccin-frappe
 input type:keyboard {
     xkb_layout us,it
     xkb_options grp:rctrl_toggle
+    xkb_options caps:escape
 }
 
 
@@ -238,7 +239,7 @@ bar {
 #    }
 #}
 
-exec pidof mylock > /dev/null || exec swaylock -i $HOME/.config/sway/lock.png
-exec pidof mylock > /dev/null || exec $HOME/.config/sway/loginlock.sh
+exec swaylock -i $HOME/.config/sway/lock.png
+exec $HOME/.config/sway/loginlock.sh
 
 include /etc/sway/config.d/*
