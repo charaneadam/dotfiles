@@ -2,7 +2,6 @@
     "position": "top", 
     "height": 30,
     "modules-left": ["sway/workspaces", "sway/scratchpad"],
-    "modules-center": ["sway/window"],
     "modules-right": ["network", "pulseaudio", "battery", "backlight", "cpu", "memory", "temperature", "custom/date", "clock", "custom/power", "tray"], 
     "sway/workspaces": {
         "disable-scroll": true,
