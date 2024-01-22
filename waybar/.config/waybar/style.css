@@ -11,6 +11,17 @@ window#waybar {
     color: white;
 }
 
+#scratchpad {
+ 	background-color: #24283b;
+	margin: 5px 5px 5px 5px;
+  padding: 5px;
+	border-radius: 5px; 
+  color: #c0caf5;
+}
+
+#scratchpad.empty {
+	background-color: transparent;
+}
 #workspaces {
 	background-color: #24283b;
 	margin: 5px;
@@ -34,7 +45,7 @@ window#waybar {
 	border-radius: 5px;
 }
 
-#custom-date, #clock, #tray, #battery, #pulseaudio, #network {
+#custom-date, #clock, #tray, #battery, #pulseaudio, #network, #backlight {
 	background-color: #24283b;
 	padding: 5px 10px;
 	margin: 5px 0px;
@@ -72,6 +83,10 @@ window#waybar {
 
 #battery {
     color: #9ece6a;
+}
+
+#backlight{
+  color: #bbccdd;
 }
 
 #battery.charging {
