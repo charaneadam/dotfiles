@@ -10,7 +10,7 @@ include catppuccin-frappe
 font pango: Hack Medium 12
 
 gaps outer 1px
-gaps inner 2px
+gaps inner 4px
 
 default_border none
 
