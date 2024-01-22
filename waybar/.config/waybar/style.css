@@ -45,7 +45,8 @@ window#waybar {
 	border-radius: 5px;
 }
 
-#custom-date, #clock, #tray, #battery, #pulseaudio, #network, #backlight {
+#custom-date, #clock, #tray, #battery, #pulseaudio, #network, #backlight, 
+#cpu, #temperature, #memory {
 	background-color: #24283b;
 	padding: 5px 10px;
 	margin: 5px 0px;
@@ -85,7 +86,19 @@ window#waybar {
     color: #9ece6a;
 }
 
-#backlight{
+#memory{
+  color: #c9b7ed;
+}
+
+#temperature{
+  color: #6495ED;
+}
+
+#cpu{
+  color: #FFE4B5;
+}
+
+#backlight {
   color: #bbccdd;
 }
 

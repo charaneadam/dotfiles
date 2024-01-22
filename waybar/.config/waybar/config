@@ -3,7 +3,7 @@
     "height": 30,
     "modules-left": ["sway/workspaces", "sway/scratchpad"],
     "modules-center": ["sway/window"],
-    "modules-right": ["network", "pulseaudio", "battery", "backlight", "custom/date", "clock", "custom/power", "tray"], 
+    "modules-right": ["network", "pulseaudio", "battery", "backlight", "cpu", "memory", "temperature", "custom/date", "clock", "custom/power", "tray"], 
     "sway/workspaces": {
         "disable-scroll": true,
         "all-outputs": false,
@@ -29,6 +29,21 @@
         "format": " {:%H:%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
+    },
+    "cpu": {
+        "format": "  {usage}%",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "  {}%"
+    },
+    "temperature": {
+        // "thermal-zone": 2,
+        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 80,
+        // "format-critical": "{icon}  {temperatureC}°C",
+        "format": "{temperatureC}°C {icon}",
+        "format-icons": ["", "", ""]
     },
     "battery": {
         "bat": "BAT1",
