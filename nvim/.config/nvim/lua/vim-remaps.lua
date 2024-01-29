@@ -25,6 +25,6 @@ vim.keymap.set("t", "<M-.>", "<C-\\><C-n>:ToggleTerm direction=horizontal<CR>")
 
 vim.keymap.set("n", "<C-n>", ":Neotree toggle<CR>")
 
-vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
+vim.keymap.set("n", "gf", vim.lsp.buf.format, {})
 
 vim.keymap.set("n", "<leader>lv", ":VimtexView<CR>", {})
