@@ -28,6 +28,7 @@ return {
 					"pyright",
 					"clangd",
 					"rust_analyzer",
+          "lua-language-server",
 				},
 			})
 
@@ -89,6 +90,13 @@ return {
 				capabilities = capabilities,
 				on_attach = keymaps,
 			})
+
+			lspconfig.lua_ls.setup({
+				capabilities = capabilities,
+				on_attach = keymaps,
+			})
+
+
 		end,
 	},
 }
