@@ -15,6 +15,8 @@ return {
 			vim.keymap.set("n", "gp", vim.diagnostic.goto_prev, { buffer = 0 })
 			vim.keymap.set("n", "gr", vim.lsp.buf.rename, { buffer = 0 })
 			vim.keymap.set("n", "ga", vim.lsp.buf.code_action, { buffer = 0 })
+			vim.keymap.set("n", "gh", ":ClangdSwitchSourceHeader<CR>", { buffer = 0 })
+
 			vim.keymap.set("n", "<leader>fd", ":Telescope diagnostics<CR>", { buffer = 0 })
 		end
 
