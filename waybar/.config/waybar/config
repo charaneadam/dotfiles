@@ -42,10 +42,10 @@
         "critical-threshold": 80,
         // "format-critical": "{icon}  {temperatureC}°C",
         "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", ""]
+        "format-icons": [""]
     },
     "battery": {
-        "bat": "BAT1",
+        "bat": "BAT0",
         "design-capacity": true,
         "states": {
             "warning": 30,
@@ -55,11 +55,11 @@
         "format": " {capacity}%",
         "format-alt": "{time} {icon}",
         "format-icons": [
-            "", 
-            "",
-            "",
-            "",
-            ""
+            " ", 
+            " ",
+            " ",
+            " ",
+            " "
         ]
     },
     "backlight": {
