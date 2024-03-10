@@ -34,6 +34,8 @@ alias open='xdg-open'
 alias dropbox='python ~/source/dropbox/dropbox.py'
 alias ssh='kitten ssh'
 alias mirror='wl-mirror eDP-1'
+alias vpn='nmcli -a connection up'
+alias unvpn='nmcli -a connection down'
 
 export shapelets_db="adam"
 export shapelets_user="adam"
