@@ -89,8 +89,8 @@ exec swayidle -w \
 #
 
     bindsym $mod+m exec pactl set-sink-mute 0 toggle
-    bindsym $mod+Shift+equal exec pactl set-sink-volume 0 +5%
-    bindsym $mod+equal exec pactl set-sink-volume 0 -5%
+    bindsym $mod+x exec pactl set-sink-volume 0 +5%
+    bindsym $mod+z exec pactl set-sink-volume 0 -5%
 
     # Start a terminal
     bindsym $mod+Return exec $term
