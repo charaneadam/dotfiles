@@ -45,7 +45,7 @@
         "format-icons": [""]
     },
     "battery": {
-        "bat": "BAT0",
+        "bat": "BAT1",
         "design-capacity": true,
         "states": {
             "warning": 30,
