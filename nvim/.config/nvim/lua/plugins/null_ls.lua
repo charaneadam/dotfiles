@@ -4,22 +4,22 @@ return {
 	dependencies = {
 		"williamboman/mason.nvim",
 		"nvimtools/none-ls.nvim",
-    "nvimtools/none-ls-extras.nvim",
-  },
+		"nvimtools/none-ls-extras.nvim",
+	},
 	config = function()
 		require("mason").setup()
 		require("mason-null-ls").setup({
 			ensure_installed = {
 				"stylua",
 				"flake8",
-				"pylint",
 				"black",
 
 				"codelldb",
 
 				"lua_ls",
+				"bibtex-tidy",
 				"texlab",
-        "latexindent",
+				"latexindent",
 				"pyright",
 				"clangd",
 				"rust_analyzer",
@@ -32,10 +32,10 @@ return {
 			sources = {
 
 				null_ls.builtins.formatting.black,
-        require("none-ls.diagnostics.flake8"),
-				null_ls.builtins.diagnostics.pylint,
+				require("none-ls.diagnostics.flake8"),
 
-				null_ls.builtins.formatting.bibclean,
+        null_ls.builtins.formatting.bibclean,
+				--require("none-ls.formatting.bibtex-tidy"),
 				require("none-ls.formatting.latexindent"),
 
 				null_ls.builtins.formatting.stylua,

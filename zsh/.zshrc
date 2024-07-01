@@ -24,6 +24,7 @@ export PATH=$PATH:~/.local/texlive/bin/x86_64-linux
 export PATH=$PATH:~/.local/bin
 export Path=$PATH
 alias conda=micromamba
+alias e=exit
 
 alias clipboard='wl-paste'
 alias cpvpn='cat ~/.top_secret | tr -d "\n" | wl-copy'
@@ -32,15 +33,10 @@ export XDG_CONFIG_HOME=~/.config
 alias open='xdg-open'
 
 alias dropbox='python ~/source/dropbox/dropbox.py'
-alias ssh='kitten ssh'
+#alias ssh='kitten ssh'
 alias mirror='wl-mirror eDP-1'
 alias vpn='nmcli -a connection up'
 alias unvpn='nmcli -a connection down'
-
-export shapelets_db="adam"
-export shapelets_user="adam"
-export shapelets_pass="adamX765"
-export shapelets_host="ismard.inf.unibz.it"
 
 # >>> mamba initialize >>>
 # !! Contents within this block are managed by 'mamba init' !!
@@ -54,3 +50,4 @@ else
 fi
 unset __mamba_setup
 # <<< mamba initialize <<<
+eval "$(zoxide init zsh)"
