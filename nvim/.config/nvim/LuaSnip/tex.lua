@@ -20,7 +20,7 @@ return {
 		fmta(
 			[[
       \begin{itemize}
-          item <>
+          \item <>
       \end{itemize}
     ]],
 			{
@@ -34,7 +34,7 @@ return {
 		fmta(
 			[[
       \begin{enumerate}
-          item <>
+          \item <>
       \end{enumerate}
     ]],
 			{
