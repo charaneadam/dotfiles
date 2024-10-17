@@ -85,7 +85,7 @@ window#waybar {
 }
 
 #battery {
-    color: #9ece6a;
+    color: #FFE4B5;
 }
 
 #memory{
@@ -93,11 +93,11 @@ window#waybar {
 }
 
 #temperature{
-  color: #6495ED;
+  color: #FFE4B5;
 }
 
 #cpu{
-  color: #FFE4B5;
+  color: #c9b7ed;
 }
 
 #backlight {
@@ -120,6 +120,6 @@ window#waybar {
 }
 
 #pulseaudio {
-	color: #e0af68;
+	color: #bbccdd;
 }
 
