@@ -23,20 +23,25 @@ export VISUAL="nvim"
 export PATH=$PATH:~/.local/texlive/bin/x86_64-linux
 export PATH=$PATH:~/.local/bin
 export Path=$PATH
+alias zz='cd $(find ${1:-.} -path "*/\.*" -prune -o -type d -print 2> /dev/null | fzf +m)'
 alias conda=micromamba
 alias e=exit
+alias ff='nvim $(fzf)'
 
 alias clipboard='wl-paste'
 alias cpvpn='cat ~/.top_secret | tr -d "\n" | wl-copy'
+alias rm='trash-put'
+alias ncp="cat ${NNN_SEL:-${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.selection} | tr '\0' '\n'"
 
 export XDG_CONFIG_HOME=~/.config
 alias open='xdg-open'
 
 alias dropbox='python ~/source/dropbox/dropbox.py'
-#alias ssh='kitten ssh'
+alias ssh='kitten ssh'
 alias mirror='wl-mirror eDP-1'
 alias vpn='nmcli -a connection up'
 alias unvpn='nmcli -a connection down'
+alias br="sed 's/\s\+/\n/g'"
 
 # >>> mamba initialize >>>
 # !! Contents within this block are managed by 'mamba init' !!
