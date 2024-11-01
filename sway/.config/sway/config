@@ -6,7 +6,8 @@
 
 
 #font pango: SourceCodePro Medium 12
-font pango: Hack Medium 12
+#font pango: Hack Medium 12
+font pango: JetBrainsMono Medium 12
 
 gaps outer 1px
 gaps inner 4px
@@ -16,11 +17,11 @@ default_border none
 
 input type:touchpad { 
     tap enabled
-    #natural_scroll enabled
+    natural_scroll enabled
 }
 
 input type:keyboard {
-    xkb_layout us,it
+    xkb_layout us
     xkb_options grp:rctrl_toggle
     xkb_options caps:escape
 }
@@ -88,14 +89,13 @@ exec swayidle -w \
 # Basics:
 #
 
-    bindsym $mod+m exec pactl set-sink-mute 0 toggle
-    bindsym $mod+x exec pactl set-sink-volume 0 +5%
-    bindsym $mod+z exec pactl set-sink-volume 0 -5%
+    bindsym $mod+m exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+    bindsym $mod+x exec wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+
+    bindsym $mod+z exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
 
     # Start a terminal
     bindsym $mod+Return exec $term
-    # Start OSS Code
-    bindsym $mod+c exec /home/adam/source/code.sh
+    bindsym $mod+f exec firefox
 
     # Kill focused window
     bindsym $mod+Shift+q kill
@@ -181,7 +181,7 @@ exec swayidle -w \
     bindsym $mod+e layout toggle split
 
     # Make the current focus fullscreen
-    bindsym $mod+f fullscreen
+    bindsym $mod+Shift+f fullscreen
 
     # Toggle the current focus between tiling and floating mode
     bindsym $mod+Shift+space floating toggle
@@ -236,6 +236,11 @@ bindsym $mod+r mode "resize"
 bar {
 	swaybar_command waybar
 }
+
+
+# Notifications
+exec swaync
+bindsym $mod+Shift+n exec swaync-client -t -sw
 
 #bar {
 #    position top
