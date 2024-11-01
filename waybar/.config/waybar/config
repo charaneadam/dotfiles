@@ -39,7 +39,6 @@
         "memory",
         "idle_inhibitor",
         "backlight",
-        "pulseaudio",
         "battery",
         "clock",
         "tray",
@@ -87,7 +86,8 @@
             "deactivated": ""
         },
         "tooltip-format-activated": "Idle Inhibitor Activated",
-        "tooltip-format-deactivated": "Idle Inhibitor Deactivated"
+        "tooltip-format-deactivated": "Idle Inhibitor Deactivated",
+        "on-click": "swaync-client -t -sw"
     },
     "backlight": {
         "format": "{icon}  {percent}%",
@@ -95,22 +95,6 @@
         "tooltip-format": "Backlight (Scroll): {percent}%",
         "on-scroll-down": "brightnessctl -c backlight set 5%-",
         "on-scroll-up": "brightnessctl -c backlight set +5%"
-    },
-    "pulseaudio": {
-        "scroll-step": 2,
-        "format": "{icon}  {volume}%",
-        "format-muted":"󰝟 muted",
-        "format-icons": {
-            "headphones": "",
-            "handsfree": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["󰕿", "󰖀", "󰕾"]
-        },
-        "on-click": "footclient -T waybar_alsamixer -e alsamixer -M",
-        "on-click-right": "pavucontrol"
     },
     "battery": {
         "states": {
