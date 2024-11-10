@@ -60,7 +60,8 @@ window#waybar {
 
 #workspaces button {
     padding: 2px 8px;
-    border-bottom: 2px;
+    border: 2px;
+    border-bottom: 3.5px;
     color: #eceff4;
     border-color: #81a1c1;
     border-style: solid;
@@ -68,7 +69,7 @@ window#waybar {
 }
 
 #workspaces button.focused {
-    border-color: #d8dee9;
+    border-color: #9f1209;
 }
 
 #mode {

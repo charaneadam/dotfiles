@@ -16,7 +16,7 @@ cp ~/dotfiles/zsh/.zshrc ~/.zshrc
 chsh -s $(which zsh)
 
 echo ""
-echo "Installing yay"
+echo "#######  Installing yay  #######"
 cd ~
 mkdir -p source
 cd source
@@ -25,8 +25,17 @@ cd yay
 makepkg -si
 
 echo ""
-echo "Installing dependencies with Yay:"
+echo "#######  Installing dependencies with Yay  #######"
 yay -S wlogout swaylock-effects
+
+
+echo ""
+echo "#######  Installing Dropbox  #######"
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+cd source
+mkdir dropbox
+cd dropbox
+wget https://linux.dropbox.com/packages/dropbox.py
 
 # Interactive script to install Nerd Fonts
 curl -fsSL https://raw.githubusercontent.com/getnf/getnf/main/install.sh | bash
