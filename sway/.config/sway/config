@@ -92,12 +92,12 @@ exec swayidle -w \
 # Basics:
 #
 
-    #bindsym $mod+m exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
-    #bindsym $mod+x exec wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+
-    #bindsym $mod+z exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
     bindsym $mod+m exec pactl set-sink-mute 3 toggle
     bindsym $mod+x exec pactl set-sink-volume 3 +5%
     bindsym $mod+z exec pactl set-sink-volume 3 -5%
+    bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+    bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+    bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
 
     # Start a terminal
     bindsym $mod+Return exec $term
