@@ -103,6 +103,9 @@ exec swayidle -w \
     bindsym $mod+Return exec $term
     bindsym $mod+f exec firefox
 
+    # Lock screen
+    bindsym $mod+Shift+s exec swaylock
+
     # Kill focused window
     bindsym $mod+Shift+q kill
 
