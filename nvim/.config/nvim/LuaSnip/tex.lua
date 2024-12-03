@@ -42,4 +42,40 @@ return {
 			}
 		)
 	),
+
+  s(
+		{ trig = ";bf", snippetType = "autosnippet" },
+		fmta(
+			[[
+      \textbf{<>}
+    ]],
+			{
+				i(0),
+			}
+		)
+	),
+
+  s(
+		{ trig = ";bb", snippetType = "autosnippet" },
+		fmta(
+			[[
+      \mathbb{<>}
+    ]],
+			{
+				i(0),
+			}
+		)
+	),
+
+  s(
+		{ trig = ";cal", snippetType = "autosnippet" },
+		fmta(
+			[[
+      \mathcal{<>}
+    ]],
+			{
+				i(0),
+			}
+		)
+	),
 }
