@@ -1,11 +1,11 @@
 sudo pacman -S  --needed base-devel gcc gdb neovim git nodejs npm \
                 lsa-ucm-conf alsa-utils sof-firmware pulseaudio \
                 pulseaudio-alsa pulseaudio-bluetooth pulseaudio-zeroconf \
-                trash-cli p7zip unrar zip unzip \
+                trash-cli p7zip unrar zip unzip wl-mirror\
                 opendoas stow zsh fzf ripgrep zoxide zathura zathura-pdf-mupdf \
                 wl-clipboard wofi waybar kitty swayimg swaync wg-hello \
                 neovim tree-sitter tree-sitter-cli \
-                bluez blueman thunar gvfs gvfs-afc thunar-volman kanshi
+                bluez blueman thunar gvfs gvfs-afc thunar-volman xarchiver kanshi
 
 
 sudo echo "permit nopass adam as root cmd pacman" >> /etc/doas.conf
