@@ -49,6 +49,7 @@ return {
 		lspconfig.clangd.setup({
 			capabilities = capabilities,
 			on_attach = keymaps,
+			cmd = { "clangd", "--compile-commands-dir=" .. vim.fn.getcwd() .. "/build" },
 		})
 
 		lspconfig.lua_ls.setup({

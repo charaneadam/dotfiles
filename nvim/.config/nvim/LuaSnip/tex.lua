@@ -16,7 +16,7 @@ return {
 	),
 
 	s(
-		{ trig = ";item", snippetType = "autosnippet" },
+		{ trig = ";ul", snippetType = "autosnippet" },
 		fmta(
 			[[
       \begin{itemize}
@@ -30,7 +30,7 @@ return {
 	),
 
 	s(
-		{ trig = ";enum", snippetType = "autosnippet" },
+		{ trig = ";ol", snippetType = "autosnippet" },
 		fmta(
 			[[
       \begin{enumerate}
@@ -43,11 +43,35 @@ return {
 		)
 	),
 
+	s(
+		{ trig = ";bm", snippetType = "autosnippet" },
+		fmta(
+			[[
+      \bm{<>}
+    ]],
+			{
+				i(0),
+			}
+		)
+	),
+
   s(
 		{ trig = ";bf", snippetType = "autosnippet" },
 		fmta(
 			[[
       \textbf{<>}
+    ]],
+			{
+				i(0),
+			}
+		)
+	),
+
+  s(
+		{ trig = ";it", snippetType = "autosnippet" },
+		fmta(
+			[[
+      \textit{<>}
     ]],
 			{
 				i(0),
