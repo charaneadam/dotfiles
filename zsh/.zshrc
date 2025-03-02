@@ -55,4 +55,3 @@ else
 fi
 unset __mamba_setup
 # <<< mamba initialize <<<
-eval "$(zoxide init zsh)"

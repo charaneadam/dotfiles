@@ -2,10 +2,33 @@ return {
 	"mfussenegger/nvim-dap",
 	dependencies = {
 		"rcarriga/nvim-dap-ui",
-    "nvim-neotest/nvim-nio"
+		"nvim-neotest/nvim-nio",
+		"theHamsta/nvim-dap-virtual-text",
 	},
 	config = function()
 		local dap, dapui = require("dap"), require("dapui")
+
+		dap.adapters.lldb = {
+			type = "executable",
+			command = "/usr/bin/lldb",
+			name = "lldb",
+		}
+
+		dap.configurations.cpp = {
+			{
+				name = "Launch",
+				type = "lldb",
+				request = "launch",
+				program = function()
+					return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/build", "file")
+				end,
+				cwd = "${workspaceFolder}",
+				stopOnEntry = false,
+				args = {},
+			},
+		}
+		dap.configurations.c = dap.configurations.cpp
+
 		dap.listeners.before.attach.dapui_config = function()
 			dapui.open()
 		end
