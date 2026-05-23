@@ -10,7 +10,9 @@ if not vim.loop.fs_stat(lazypath) then
 	})
 end
 vim.opt.rtp:prepend(lazypath)
+--vim.opt.suffixesadd:append(".md")
 
 require("vim-settings")
 require("vim-remaps")
+require("vim-notes")
 require("lazy").setup("plugins")

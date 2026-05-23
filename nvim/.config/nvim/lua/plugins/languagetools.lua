@@ -1,3 +1,0 @@
-return{
-  "dpelle/vim-languagetool"
-}
