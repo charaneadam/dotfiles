@@ -1,0 +1,65 @@
+[
+  {
+    "output": ["eDP-1", "HDMI-A-1"],
+    "layer": "top",
+    "position": "top",
+
+    "modules-left": [
+      "clock",
+      "cpu",
+      "memory",
+      "custom/podman",
+      "battery"
+    ],
+
+    "modules-center": [
+      "custom/notifications",
+      "hyprland/workspaces"
+    ], 
+
+    "modules-right": [
+      "custom/updates",
+      "backlight",
+      "pulseaudio",
+      "network",
+      "custom/weather",
+      "tray"
+      //"custom/power"
+    ],
+
+    "include": ["$HOME/.config/waybar/modules.jsonc"]
+  },
+
+  {
+    "output": ["HDMI-A-2"],
+    "layer": "top",
+    "position": "top",
+
+
+    "modules-left": [
+      "custom/nvidia",
+      "cpu",
+      "memory",
+      "custom/podman",
+      "clock",
+      "battery"
+    ],
+
+    "modules-center": [
+      "custom/notifications",
+      "hyprland/workspaces"
+    ], 
+
+    "modules-right": [
+      "custom/updates",
+      "backlight",
+      "pulseaudio",
+      "network",
+      "custom/weather",
+      "tray"
+      //"custom/power"
+    ],
+
+    "include": ["$HOME/.config/waybar/modules.jsonc"]
+  }
+]

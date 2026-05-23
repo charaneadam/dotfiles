@@ -1,0 +1,9 @@
+[opener]
+imv = [
+    { run = 'imv .', orphan = true, desc = "Image Viewer (imv)" },
+]
+
+[open]
+prepend_rules = [
+    { mime = "image/*", use = "imv" }, 
+]

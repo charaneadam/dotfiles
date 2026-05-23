@@ -1,0 +1,4 @@
+[[mgr.prepend_keymap]]
+on   = [ "g", "u" ]
+run  = "cd /run/media/your_username_here"
+desc = "Go to USB drives"

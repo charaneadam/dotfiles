@@ -1,0 +1,76 @@
+* {
+  font-family: 'JetBrainsMono Nerd Font', monospace;
+  font-size: 18px;
+}
+
+/* Window - Added transparency here */
+window {
+  margin: 0px;
+  padding: 10px;
+  border: 2px solid #babbf1; /* Lavender */
+  border-radius: 12px;
+  /* Hex #303446 with 0.9 opacity */
+  background-color: rgba(48, 52, 70, 0.9); 
+}
+
+/* Inner Box */
+#inner-box {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+}
+
+/* Outer Box */
+#outer-box {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+}
+
+/* Scroll */
+#scroll {
+  margin: 0px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+}
+
+/* Input */
+#input {
+  margin: 5px 20px;
+  padding: 10px;
+  border: 2px solid #85c1dc; /* Sapphire */
+  border-radius: 8px;
+  color: #c6d0f5; /* Text */
+  background-color: #414559; /* Mantle */
+}
+
+#input image {
+    border: none;
+    color: #babbf1;
+}
+
+/* Text */
+#text {
+  margin: 5px;
+  border: none;
+  color: #c6d0f5; /* Text */
+}
+
+#entry {
+  background-color: transparent;
+  border-radius: 8px;
+}
+
+/* Selected Entry */
+#entry:selected {
+  background-color: #51576d; /* Surface1 */
+  border: none;
+}
+
+#entry:selected #text {
+  color: #babbf1; /* Lavender */
+  font-weight: bold;
+}

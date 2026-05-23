@@ -1,0 +1,239 @@
+* {
+  font-family: JetbrainsMono Nerd Font;
+  font-size: 15px;
+  min-height: 0;
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-bottom: 0px;
+}
+
+#waybar {
+  background: transparent;
+  color: #c6d0f5;
+  margin: 2px 2px;
+}
+
+#workspaces {
+    margin: 5px;
+    background: #101010;
+}
+
+#workspaces button.special {
+    color: #babbf1;
+    font-weight: bold;
+    padding-right: 8px;
+}
+
+#workspaces button.special.active {
+    color: #99d1db;
+    border-bottom: 3px solid #99d1db;
+}
+
+#workspaces button {
+    color: #babbf1;
+    border-radius: 5px;
+    padding: 0.4rem;
+}
+
+#workspaces button.active {
+    color: #99d1db;
+    border-bottom: 3px solid #99d1db;
+}
+
+#workspaces button:hover {
+    background: transparent;
+    box-shadow: none;
+    text-shadow: none;
+    border-color: transparent;
+    /* This removes the transition "flash" too */
+    transition: none;
+}
+
+#workspaces button.active:hover {
+    background: transparent;
+    color: #99d1db; /* Keep your active color */
+}
+
+button {
+  background: transparent;
+}
+
+
+#workspaces,
+#clock,
+#custom-weather,
+#backlight,
+#network,
+#cpu,
+#memory,
+#custom-podman,
+#custom-updates,
+#backlight,
+#tray,
+#pulseaudio,
+#battery,
+#custom-power {
+    background: transparent;
+    border: none;
+    padding: 0 8px; /* Control spacing between modules here */
+    margin: 0;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    background-color: rgba(16, 16, 16, 0.1); /* Dark but transparent */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle "glass" edge */
+    border-radius: 12px;
+    padding: 2px 8px;
+    margin-top: 5px;
+}
+
+/* 3. Add specific spacing for the left/right edges of the bar */
+.modules-left {
+    margin-left: 10px;
+}
+
+.modules-right {
+    margin-right: 10px;
+}
+
+
+#tray {
+    margin-right: 8px;
+    padding: 0 10px;
+}
+
+#cpu.warning {
+    color: #fab387; /* Orange */
+}
+
+#cpu.critical {
+    color: #f38ba8; /* Red */
+}
+
+#memory.warning {
+    color: #fab387; /* Orange (Starts at 70%) */
+}
+
+#memory.critical {
+    color: #f38ba8; /* Red (Starts at 90%) */
+    font-weight: bold;
+}
+
+#clock {
+  /*color: #8caaee;*/
+  border-radius: 5px;
+}
+
+#custom-weather {
+  /*color: #8caaee;*/
+  margin-left: 0.5rem;
+  border-radius: 5px;
+}
+
+#battery {
+  color: #a6d189;
+}
+
+#battery.charging {
+  color: #a6d189;
+}
+
+#battery.warning:not(.charging) {
+  color: #e78284;
+}
+
+#backlight,
+#battery {
+  border-radius: 0;
+}
+
+
+#custom-docker {
+  color: #85c1dc;
+}
+
+#custom-music {
+  color: #ca9ee6;
+  border-radius: 5px;
+}
+
+#custom-lock {
+  color: #babbf1;
+}
+
+#custom-power {
+  margin-right: 1rem;
+  border-radius: 0px 5px 5px 0px;
+}
+
+#custom-docker.docker {
+  color: #85c1dc;
+}
+
+#custom-docker.docker-none {
+  color: #737994;
+}
+
+#custom-docker.docker-error {
+  color: #e78284;
+}
+
+#custom-weather.clear {
+  color: #e5c890; /* Sunny yellow */
+}
+
+#custom-weather.cloud {
+  color: #99d1db; /* Light blue */
+}
+
+#custom-weather.rain {
+  color: #8caaee; /* Blue */
+}
+
+#custom-weather.snow {
+  color: #c6d0f5; /* White-ish */
+}
+
+#custom-weather.thunder {
+  color: #ca9ee6; /* Purple */
+}
+
+#custom-weather.fog {
+  color: #b0b4bc; /* Gray */
+}
+
+#custom-weather.error {
+  color: #e78284; /* Red */
+}
+
+#custom-weather:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease;
+}
+
+/* If the script is "Off", let's make it dimmed */
+#custom-weather.off {
+    color: #6c7086; /* Muted gray */
+}
+
+#custom-updates {
+    /*color: #f9e2af; [> Yellow/Gold <]*/
+    background: transparent;
+    padding: 0 10px;
+}
+
+#custom-notification {
+    color: #babbf1; /* Your Lavender */
+    padding: 0 10px;
+}
+
+/* Optional: Make the icon turn red if there are unread notifications in history */
+#custom-notification.notification {
+    color: #99d1db; /* Your Active Blue */
+}
+
+#custom-notification.dnd {
+    color: #eba0ac; /* Muted Red/Pink for DND */
+}
